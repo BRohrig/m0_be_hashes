@@ -1,29 +1,34 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+foods = {
+  "apples": 23, 
+  "grapes": 507, 
+  "eggs": 48
+}
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.values[1]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods["muffins"] = 2
+
+p foods
 
 
 #-------------------
@@ -38,15 +43,23 @@ p zoo
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 # Write code that prints your email hash to the terminal.
-
+email = {
+  "sender" => "bob@happytown.net",
+  "recipient" => "mayor@happytown.gov",
+  "Title" => "The Kids Won't Stop Skateboarding",
+  "body" => "Dear Mr. Mayor, the darn kids won't stop skateboarding, i saw this many",
+  "skateboarders_perday" => [1, 3, 5, 4, 3],
+  "read_receipt" => true
+  }
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.values
 
 
 #-------------------
@@ -97,3 +110,32 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+  "sender" => "bob@happytown.net",
+  "recipient" => "mayor@happytown.gov",
+  "Title" => "The Kids Won't Stop Skateboarding",
+  "body" => "Dear Mr. Mayor, the darn kids won't stop skateboarding, i saw this many",
+  "skateboarders_perday" => [1, 3, 5, 4, 3],
+  "read_receipt" => true
+  },
+
+  {
+  "sender" => "mayor@happytown.gov",
+  "recipient" => "bob@happytown.net",
+  "Title" => "re: The Kids Won't Stop Skateboarding",
+  "body" => "Dear Mr. Bob, I apologize, but the children have every right to skateboard",
+  "read_receipt" => true
+  },
+
+  {
+  "sender" => "bob@happytown.net",
+  "recipient" => "mayor@happytown.gov",
+  "Title" => "re: re: The Kids Won't Stop Skateboarding",
+  "body" => "Dear Mr. Mayor, I will be voting your opponent in the next election",
+  "read_receipt" => true
+  }
+]
+
+p emails
